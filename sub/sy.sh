@@ -1,0 +1,1 @@
+accelerate launch --config_file=acc_config --num_cpu_threads_per_process=1 sy.py
