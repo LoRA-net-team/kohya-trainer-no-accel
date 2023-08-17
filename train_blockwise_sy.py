@@ -420,7 +420,7 @@ def train(args):
         #wandb.init(project=f'{lora_block_name}-{today}-gradnorm-{unique}',
         #           config = parameter_gradient_magnitude_dict)
         wandb.init(project='haibara-gradient-clipping-lora_blockwise')
-        wandb.run.name = f'block_{lora_block_name}'
+        wandb.run.name = f'block_{lora_block_name}_unet_lr_{str(args.unet_lr)}_text_lr_{str(args.text_encoder_lr)}'
         gradient_dict = {}
         loss_dict = {}
         import pickle
